@@ -1,0 +1,33 @@
+Static Row Widget for jQuery Tablesorter
+========================================
+
+Author: Nils Luxton
+License: MIT (see LICENSE for details)
+
+
+Description:
+
+    This widget allows you to mark any row(s) in the table as "static", thus ensuring that these rows
+    remain in their starting position through any and all sorts.
+
+
+Usage:
+
+    1. Simply add the "staticRow" widget to the tablesorter() call as follows:
+        $('#myElem').tablesorter({ widgets: ['staticRow'] });
+
+    2. Add the class "static" to any and all rows that you wish to be unsortable.
+
+    That's it!
+
+
+Included files:
+
+    /example/*
+        This contains a series of files that provide a simple, editable example of the "staticRow" widget in effect.
+
+    /jquery.tablesorter.staticrow.js
+        This is the development version of the widget, in case you wish to change the code / see how it's done
+
+    /jquery.tablesorter.staticrow.min.js
+        This is the production version of the widget, with code minified

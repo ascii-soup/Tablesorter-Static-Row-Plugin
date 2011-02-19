@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQUery Tablesorter "Static Rows" Plugin</title>
+    <script type="text/javascript" src="javascript/jquery.min.js"></script>
+    <script type="text/javascript" src="javascript/tablesorter/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="javascript/jquery.tablesorter.staticrow.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="javascript/tablesorter/themes/blue/style.css" />
+    <style type="text/css">
+        table {
+            border: 1px solid #8899BB;
+            margin: 20px;
+        }
+        td {
+            font-size: 13px;
+            font-family: "Lucida Sans Unicode", Arial, Helvetica, sans-serif;
+            padding: 3px;
+            text-align: center;
+        }
+        #alphimals tbody tr.static td {
+            background-color: #999999;
+            color: #ffffff;
+        }
+    </style>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#alphimals').tablesorter({ widgets: ['zebra','staticRow'] })
+        });
+    </script>
+</head>
+<body>
+
+    <table id="alphimals" cellspacing="0" class="tablesorter">
+        <thead>
+            <tr>
+                <th>Column 1</th>
+                <th>Column 2</th>
+                <th>Column 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>A</td>
+                <td>1</td>
+                <td>Anteater</td>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td>2</td>
+                <td>Bear</td>
+            </tr>
+            <tr>
+                <td>C</td>
+                <td>3</td>
+                <td>Cat</td>
+            </tr>
+            <tr>
+                <td>D</td>
+                <td>4</td>
+                <td>Dog</td>
+            </tr>
+            <tr>
+                <td>E</td>
+                <td>5</td>
+                <td>Emu</td>
+            </tr>
+            <tr>
+                <td>F</td>
+                <td>6</td>
+                <td>Frog</td>
+            </tr>
+            <tr>
+                <td>G</td>
+                <td>7</td>
+                <td>Goat</td>
+            </tr>
+            <tr>
+                <td>H</td>
+                <td>8</td>
+                <td>Horse</td>
+            </tr>
+            <tr class="static">
+                <td>I</td>
+                <td>9</td>
+                <td>Iguana</td>
+            </tr>
+            <tr>
+                <td>J</td>
+                <td>10</td>
+                <td>Jellyfish</td>
+            </tr>
+            <tr>
+                <td>K</td>
+                <td>11</td>
+                <td>Koala</td>
+            </tr>
+            <tr>
+                <td>L</td>
+                <td>12</td>
+                <td>Lemur</td>
+            </tr>
+            <tr>
+                <td>M</td>
+                <td>13</td>
+                <td>Mink</td>
+            </tr>
+            <tr>
+                <td>N</td>
+                <td>14</td>
+                <td>Nightingale</td>
+            </tr>
+            <tr>
+                <td>O</td>
+                <td>15</td>
+                <td>Octopus</td>
+            </tr>
+            <tr>
+                <td>P</td>
+                <td>16</td>
+                <td>Pig</td>
+            </tr>
+            <tr>
+                <td>Q</td>
+                <td>17</td>
+                <td>Quail</td>
+            </tr>
+            <tr>
+                <td>R</td>
+                <td>18</td>
+                <td>Rhino</td>
+            </tr>
+            <tr>
+                <td>S</td>
+                <td>19</td>
+                <td>Seal</td>
+            </tr>
+            <tr>
+                <td>T</td>
+                <td>20</td>
+                <td>Tiger</td>
+            </tr>
+            <tr>
+                <td>U</td>
+                <td>21</td>
+                <td>Urchin</td>
+            </tr>
+            <tr>
+                <td>V</td>
+                <td>22</td>
+                <td>Vole</td>
+            </tr>
+            <tr>
+                <td>W</td>
+                <td>23</td>
+                <td>Walrus</td>
+            </tr>
+            <tr>
+                <td>X</td>
+                <td>24</td>
+                <td>Xantis</td>
+            </tr>
+            <tr>
+                <td>Y</td>
+                <td>25</td>
+                <td>Yak</td>
+            </tr>
+            <tr>
+                <td>Z</td>
+                <td>26</td>
+                <td>Zebra</td>
+            </tr>
+            <tr class="static">
+                <td>Total Count</td>
+                <td>Lots!</td>
+                <td>&nbsp;</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
