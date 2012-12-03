@@ -23,9 +23,9 @@ $.tablesorter.addWidget({
         // whether this is the first run of "Format"
         // (i.e. is this the table's default starting position,
         //  or has it been sorted?)
-        if (typeof table.data('hasSorted') == 'undefined')
+        if (typeof $(table).data('hasSorted') == 'undefined')
         {
-            table.data('hasSorted', true); // This will force us into the "else" block the next time "Format" is run
+            $(table).data('hasSorted', true); // This will force us into the "else" block the next time "Format" is run
 
             // "Index" the static rows, saving their current (starting)
             // position in the table inside a data() param on the
